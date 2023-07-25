@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    padding: 0px 40px 0px 40px;
+}
+.title{
+    color: #000;
+font-family: Playfair Display;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.title-description{
+    width: 50%;
+    color: #4F4F4F;
+font-family: Montserrat;
+font-size: 14px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+margin-top: 12px;
+margin-bottom: 17px;
+}
+.banner-photo{
+     width: 100%;
+}
+.banner-photo img{
+        width: 100%;
+}
+
+/* ingredients section start from here */
+.ingredients-left-content{
+    width: 50%;
+}
+.ingredients-right-content{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.ingredients-section{
+    margin-top: 48px;
+    display: flex;
+    padding: 0px 40px 0px 40px;
+}
+.ingredients-title{
+    color: #333;
+font-family: Playfair Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.ingredients-option{
+    color: #333;
+font-family: Playfair Display;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+margin-top: 32px;
+margin-bottom: 32px;
+}
+.check-content{
+    display: flex ;
+    gap: 8px;
+    margin-bottom: 14px;
+    
+}
+.check-content input{
+    
+}
+.check-content p{
+    color:  #333;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 156.25% */
+}
+.check-content span{
+    color: #333;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+
+}
+
+
+.ingredients-box{
+    width: 100%;
+    height: min-content;
+    border-radius: 12px;
+    width: 216px;
+background: #FFF;
+box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+padding: 57px 40px;
+}
+.services-time{
+    display: flex;
+    gap:11px;
+    align-items: center;
+    margin-bottom: 43px;
+}
+.fa-clock{
+   color:  #4F4F4F;
+}
+.service-1{
+    color: var(--gray-4, #BDBDBD);
+font-family: Montserrat;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.service-2{
+   color: #333;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.new-1{
+   color: #F2994A;
+}
+
+.new-3{
+  color: #F2994A;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/* ingredients section end here */
+
+/* instruction section start */
+.instruction-section{
+     padding: 0px 40px 0px 40px;
+}
+.instruction-title{
+color:  #333;
+font-family: Playfair Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 28px;
+margin-bottom: 28px;
+}
+.instruction-option .number{
+    width: 36px;
+height: 36px;
+padding: 10px 20px;
+border-radius: 6px;
+background-color:  #F2994A;
+}
+.instruction-option{
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 31px;
+}
+.instruction-option p{
+    color: #000;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+
+line-height: 150%;
+}
+.number{
+    color: #FFF;
+font-family: Playfair Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+justify-items: center;
+align-items: center;
+}
+.number-title{
+    color: #333;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+}
+/* instruction section end */
+footer{
+    margin-top: 174px;
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0px 40px 0px 40px;
+}
+footer a{
+    text-decoration: none;
+    color: #828282;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+}
+footer p{
+   color: #828282;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+}
+
+@media screen and (max-width:576px) {
+    .title{
+        font-size: 24px;
+    }
+    .title-description{
+        width: 100%;
+    }
+    .ingredients-section{
+   
+     flex-direction: column-reverse;
+   
+}
+.small-device1{
+   grid-column: 1 / -1;
+}
+.ingredients-box{
+   
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: 20px 20px;
+     gap: 30px;
+    border-radius: 0px;
+background: #FFF;
+box-shadow: none;
+}
+.ingredients-left-content{
+    width: 100%;
+}
+.instruction-option{
+    width: 100%;
+}
+
+}
